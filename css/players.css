@@ -1,0 +1,96 @@
+.players{
+  position: relative;
+}
+
+.players-title{
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 120%;
+  color: #313131;
+}
+
+.next{
+  transform: rotate(180deg);
+}
+
+.prev, .next{
+  background-image: url("../public/img/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  transition: 0.2s;
+}
+
+.prev:hover, .next:hover{
+  background-image: url("../public/img/yellow_arrow.svg");
+}
+
+.prev:disabled, .next:disabled{
+  background-image: url("../public/img/disabled_arrow.svg");
+  cursor: not-allowed;
+}
+
+.prev:disabled:hover, .next:disabled:hover{
+  background-image: url("../public/img/disabled_arrow.svg");
+}
+
+.players-buttons{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 10px;
+  right: 72px;
+  width: 151px;
+  height: 45px;
+}
+
+.players-count{
+  width: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #313131;
+}
+
+.players-count-max{
+  opacity: 0.6;
+}
+
+@media (max-width:1350px) {
+  .players-title{
+    font-size: 50px;
+  }
+
+}
+
+@media (max-width:1100px) {
+  .players-title{
+    font-size: 40px;
+  }
+}
+
+@media (max-width:950px) {
+  .players-title{
+    font-size: 36px;
+    line-height: 111%;
+  }
+}
+
+@media (max-width:800px) {
+  .players-buttons{
+    width: 129px;
+    height: 36px;
+    top: calc(100% - 36px);
+    right: 50%;
+    transform: translateX(+50%);
+  }
+  .players{
+    height: 584px;
+  }
+  .prev, .next{
+    width: 36px;
+    height: 36px;
+  }
+}

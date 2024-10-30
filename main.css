@@ -1,0 +1,121 @@
+@import url(css/normalize.css);
+@import url(css/header.css);
+@import url(css/runningline.css);
+@import url(css/commercial.css);
+@import url(css/about.css);
+@import url(css/players.css);
+@import url(css/slider.css);
+@import url(css/footer.css);
+@import url(css/animation.css);
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Golos Text", sans-serif;
+}
+
+.title{
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%; 
+  margin: 0 auto;
+  padding: 0 72px;
+  overflow: hidden;
+}
+
+.commercial{
+  margin-bottom: 165px;
+} 
+
+.about{
+  margin-bottom: 200px;
+}
+
+.players{
+  margin-bottom: 140px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-items{
+  align-items: center;
+}
+
+.blue-text{
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #3057a2;
+}
+
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+}
+
+/* Для Firefox */
+.scroll-container {
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent; 
+}
+
+@media (max-width: 1300px) {
+  .blue-text{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blue-text{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    padding: 0 42px;
+  }
+  .blue-text{
+    font-size: 18px;
+  }
+  .commercial, .about{
+    margin-bottom: 120px;
+  } 
+  .players{
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    padding: 0 20px;
+    /* max-width: 375px; */
+    width: 100%;
+  }
+  .blue-text{
+    font-size: 18px;
+  }
+
+}
+
+
