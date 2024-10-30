@@ -3,7 +3,7 @@
   width: 100%;
   margin: 0 auto;
   height: 700px;
-  background-image: url("../public/img/1920.webp");
+  background-image: url("../img/1920.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -57,6 +57,7 @@
   line-height: 130%;
   text-align: center;
   border: none;
+  transition: 0.3s;
 }
 
 .first-button{
@@ -184,7 +185,7 @@
   }
   .header-img{
     width: 100%;
-    background-image: url("../public/img/main_screen.webp");
+    background-image: url("../img/main_screen.webp");
     background-position-y: 83%;
   }
   .header-title{

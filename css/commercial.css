@@ -4,7 +4,7 @@
   height: 250px;
   display: flex;
   align-items: center;
-  background-image: url("../public/img/chess.webp");
+  background-image: url("../img/chess.webp");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;

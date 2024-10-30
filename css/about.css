@@ -11,7 +11,7 @@
 }
 
 .prev-button, .next-button{
-  background-image: url("../public/img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 36px;
@@ -19,11 +19,11 @@
 }
 
 .prev-button:hover, .next-button:hover{
-  background-image: url("../public/img/yellow_arrow.svg");
+  background-image: url("../img/yellow_arrow.svg");
 }
 
 .prev-button:disabled, .next-button:disabled{
-  background-image: url("../public/img/disabled_arrow.svg");
+  background-image: url("../img/disabled_arrow.svg");
   cursor: not-allowed;
 
 }
@@ -96,7 +96,7 @@
 .item {
   position: relative;
   padding: 20px 22px 20px 72px;
-  background-image: url("../public/img/bg-item.webp");
+  background-image: url("../img/bg-item.webp");
   background-size: cover;
   font-weight: 500;
   font-size: 20px;
