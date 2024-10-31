@@ -8,11 +8,9 @@
     const maxDots = 5;
     let isMerged = false;
     
-    // Сохраняем исходное содержимое слайдов item1 и item4
     const originalContentItem1 = document.querySelector('.item1').innerHTML;
     const originalContentItem4 = document.querySelector('.item4').innerHTML;
     
-    // Функция отображения слайда и активной точки пагинации
     function showSlide(index) {
       slidesItem.forEach((slide, i) => {
         slide.classList.toggle('active', i === index);
@@ -28,7 +26,6 @@
       }, 300);
     }
     
-    // Создаем точки пагинации
     function createPagination() {
       pagination.innerHTML = '';
     
@@ -43,7 +40,6 @@
       });
     }
     
-    // Обновляем активное состояние точки пагинации
     function updatePagination() {
       const dots = document.querySelectorAll('.dot');
       const visibleDots = Math.min(maxDots, slidesItem.length);
@@ -54,7 +50,6 @@
       });
     }
     
-    // Обновляем состояние кнопок "назад" и "вперед"
     function updateButtons() {
       const prevButton = document.querySelector('.prev-button');
       const nextButton = document.querySelector('.next-button');
@@ -73,8 +68,6 @@
       showSlide(currentSlideItem);
     }
     
-    // Функция объединения элементов при ширине 400px
-// Функция объединения элементов при ширине 400px
 function mergeItems() {
   const item1 = document.querySelector('.item1');
   const item2 = document.querySelector('.item2');
@@ -107,13 +100,11 @@ function mergeItems() {
     isMerged = false;
   }
 
-  // Обновляем массив слайдов и создаем пагинацию заново
   slidesItem = Array.from(document.querySelectorAll('.item')).filter(item => item.style.display !== 'none');
   createPagination();
 }
 
     
-    // Добавляем обработчики событий для кнопок
     document.querySelector('.next-button').addEventListener('click', nextSlide);
     document.querySelector('.prev-button').addEventListener('click', prevSlide);
     

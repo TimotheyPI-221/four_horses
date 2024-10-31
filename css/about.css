@@ -76,8 +76,8 @@
 
 .about-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Три столбца */
-  grid-template-rows: repeat(3, auto);   /* Три строки */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, auto);  
   gap: 20px; 
   grid-template-areas: 
       "item1 item2 item3"
@@ -155,7 +155,7 @@
 }
 
 .item.merged .about-num:last-child {
-  top: 178px; /* Увеличиваем на 40px */
+  top: 178px; 
 }
 
 @media (max-width: 1350px) {
